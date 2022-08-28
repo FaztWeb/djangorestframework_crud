@@ -1,1 +1,1 @@
-web: gunicorn 'drfsimplecrud.wsgi'
+web: python manage.py migrate &&  gunicorn 'drfsimplecrud.wsgi'

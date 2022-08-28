@@ -1,8 +1,10 @@
+@api = https://web-production-3f5a.up.railway.app
+
 ### get all projects
-GET http://localhost:8000/api/projects
+GET {{api}}/api/projects
 
 ### POST new project
-POST http://localhost:8000/api/projects/
+POST {{api}}/api/projects
 Content-Type: application/json
 
 {
@@ -12,7 +14,7 @@ Content-Type: application/json
 }
 
 ### GET project by id
-GET http://localhost:8000/api/projects/1
+GET {{api}}/api/projects/1
 
 ### DELETE project by id
 DELETE http://localhost:8000/api/projects/1/
