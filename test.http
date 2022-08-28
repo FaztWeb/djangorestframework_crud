@@ -1,0 +1,36 @@
+### get all projects
+GET http://localhost:8000/api/projects
+
+### POST new project
+POST http://localhost:8000/api/projects/
+Content-Type: application/json
+
+{
+    "title": "Frontend project",
+    "description": "New frontend project using React",
+    "technology": "Nextjs"
+}
+
+### GET project by id
+GET http://localhost:8000/api/projects/1
+
+### DELETE project by id
+DELETE http://localhost:8000/api/projects/1/
+
+### PATCH project by id
+PATCH http://localhost:8000/api/projects/2/
+Content-Type: application/json
+
+{
+  "title": "E-commerce website react"
+}
+
+### PUT project by id
+PUT http://localhost:8000/api/projects/2/
+Content-Type: application/json
+
+{
+  "title": "E-commerce website react",
+  "description": "New frontend project using React",
+  "technology": "Nextjs"
+}
